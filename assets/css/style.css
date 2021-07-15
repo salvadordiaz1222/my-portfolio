@@ -1,0 +1,19 @@
+.bg-dark {
+  opacity: 0.75;
+  background-color: #343a40;
+}
+
+.blur {
+  filter: blur(0.5px);
+}
+
+.imagePDF {
+  max-height: 174px;
+  overflow: scroll;
+}
+
+.icons {
+  justify-items: center;
+  place-self: center;
+  padding: 0.55rem;
+}
