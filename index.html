@@ -75,16 +75,22 @@
         </ul>
       </div>
     </header>
+    <!----------------------------------------------------------About me section--------------------------------->
     <section class="card border m-1">
-      <div class="card-header text-center" id="about-me">About me</div>
+      <div class="headerColor">
+        <div class="card-header text-center" id="about-me">About me</div>
+      </div>
       <div class="card-text m-1">
         I'm passionate about coding, marketing and data. I really think that
         marketing and data can create great outcomes and the key point is which
         data you have and how you can corelate it.
       </div>
     </section>
+    <!-------------------------------------------------------------My work section--------------------------------->
     <section class="card border m-1">
-      <div class="card-header text-center" id="my-work">My work</div>
+      <div class="headerColor">
+        <div class="card-header text-center" id="my-work">My work</div>
+      </div>
       <div
         id="carouselExampleIndicators"
         class="card carousel slide"
@@ -99,11 +105,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active displayInfoA">
-            <a
-              href="https://salvadordiaz1222.github.io/weather-dashboard/"
-              target="_blank"
-            >
+          <div class="carousel-item active displayInfo" id="a">
               <img
                 class="d-block w-100 blur"
                 src="./assets/images/weather-Dash.png"
@@ -115,18 +117,14 @@
                   d-block
                   text-light
                   bg-gradient-light bg-dark
+                  
                 "
               >
                 <h5>Weather app</h5>
                 <p>Select a city for the current weather and forecast</p>
               </div>
-            </a>
           </div>
-          <div class="carousel-item displayInfoB">
-            <a
-              href="https://salvadordiaz1222.github.io/work-day-scheduler/"
-              target="_blank"
-            >
+          <div class="carousel-item displayInfo" id="b">
               <img
                 class="d-block w-100 blur"
                 src="./assets/images/work-sch.png"
@@ -143,7 +141,6 @@
                 <h5>Today's tasks</h5>
                 <p>Keep track of your activities for the day.</p>
               </div>
-            </a>
           </div>
         </div>
         <a
@@ -165,10 +162,14 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <!----------------------------------------------This is the div for more info on each project----------->
       <div class="card" id="mainParent"></div>
     </section>
+    <!----------------------------------------------------------------More about me section-------------------->
     <section class="card border m-1 imagePDF">
-      <div class="card-header text-center">More about me</div>
+      <div class="headerColor">
+        <div class="card-header text-center">More about me</div>
+      </div>
       <div class="card-text m-1">
         <a
           href="https://drive.google.com/file/d/1pxEpS8GhtljgDQzHfm-EvxBULBk8QBPJ/view?usp=sharing"
@@ -181,8 +182,11 @@
         </a>
       </div>
     </section>
+    <!----------------------------------------------------------------Contact me section------------------------>
     <section class="card border m-1">
-      <div class="card-header text-center">Contact me</div>
+      <div class="headerColor">
+        <div class="card-header text-center">Contact me</div>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-4 icons">
@@ -195,6 +199,7 @@
                 class="bi bi-chat-dots-fill"
                 viewBox="0 0 16 16"
               >
+              <!---------------------------------------------------------This will send you a text message-------->
               <a
               href="sms:+18328782802&body=Hey! I just looked at your profile, we need to talk."
               >
@@ -214,6 +219,7 @@
                 class="bi bi-telephone-fill"
                 viewBox="0 0 16 16"
               >
+              <!------------------------------------------------------This will make a phone call---------------->
               <a 
               href="tel:+18328782802"
               >
@@ -234,6 +240,7 @@
                 class="bi bi-envelope-open-fill"
                 viewBox="0 0 16 16"
               >
+              <!------------------------------------------------------This will send an email-------------------->
               <a 
               href="mailto:salvador.diaz1222@gmail.com?&subject=We need to talk asap&body=Hey! I just say your profile, I need to talk to you"
               >
@@ -255,6 +262,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"
     ></script>
   </body>
 </html>
