@@ -7,8 +7,10 @@ You can also find my contact details.
 
 ## This is a preview of the webpage
 
-![Weather dashboard](assets/images/weather.gif)
+![Mobile preview 1](assets/images/first-port1.gif)
+
+![Mobile preview 1](assets/images/second-port2.gif)
 
 ## This is the link of the app
 
-[a link](https://salvadordiaz1222.github.io/weather-dashboard/)
+[a link](https://salvadordiaz1222.github.io/my-portfolio/)
