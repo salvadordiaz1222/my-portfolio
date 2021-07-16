@@ -1,8 +1,27 @@
-var diplayInfoA = $(".displayInfoA");
+var displayInfo = $(".displayInfo");
 var displayInfoB = $(".displayInfoB");
 
-//This displays more info fo the Weather project
-displayInfo.on("click", function(){
+let data = {
+    a: {
+        title: "Weather app",
+        appUrl: "https://salvadordiaz1222.github.io/weather-dashboard/",
+        gitUrl: "https://github.com/salvadordiaz1222/weather-dashboard"
+    },
+    b: {
+        title: "Today\'s Task",
+        appUrl: "https://salvadordiaz1222.github.io/work-day-scheduler/",
+        gitUrl: "https://github.com/salvadordiaz1222/work-day-scheduler"
+    }
+}
+
+//---------------------------------------------This displays more info for each project---------------------------
+displayInfo.on("click", function(event){
+    console.log({event})
+        let id = event.currentTarget.id
+        //currentTarget indicates the tag where the click was made
+        //id gets the name of the id of the currentTarget tag
+        console.log({id})
+        let info = data[id]
         /*
         <h4>Weather app"</h4>
         <ul>
@@ -21,25 +40,29 @@ displayInfo.on("click", function(){
         </ul>
         */
     var createTitle = document.createElement("h4")
-    createTitle.innerText = "Weather app"
+    createTitle.innerText = info.title
     var createList = document.createElement("ul")
     var deployed = document.createElement("li")
     var deployedLink = document.createElement("a")
-    deployedLink.setAttribute("href", "https://salvadordiaz1222.github.io/weather-dashboard/")
+    deployedLink.setAttribute("href", info.appUrl)
+
     deployedLink.setAttribute("target", "_blank")
     deployedLink.innerText = "Visit the deployed version"
+    deployed.appendChild(deployedLink)
     var gitHub = document.createElement("li")
     var gitHubLink = document.createElement("a")
-    gitHubLink.setAttribute("href", "https://github.com/salvadordiaz1222/weather-dashboard")
+    gitHubLink.setAttribute("href", info.gitUrl)
+
     gitHubLink.setAttribute("target", "_blank")
     gitHubLink.innerText = "Visit the GitHub repository"
-//crear a
-//agregar href
-//appendchild li
+    gitHub.appendChild(gitHubLink)
+
     createList.appendChild(deployed)
+    createList.appendChild(gitHub)
     var main = document.getElementById("mainParent")
     main.innerText = ""
-    main.appendChild()
+    main.appendChild(createTitle)
+    main.appendChild(createList)
+
 })
 
-//This displays more info for the work scheduler project
