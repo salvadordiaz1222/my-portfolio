@@ -32,7 +32,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item active">
             <a class="nav-link" href="#"
               >Home <span class="sr-only">(current)</span></a
@@ -44,7 +44,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#my-work">My work</a>
           </li>
-          <li class="nav-item row d-lg-none d-xl-none">
+          <li class="nav-item row">
             <div class="icons col-6">
               <a
                 href="https://www.linkedin.com/in/salvador-diaz122291"
@@ -62,19 +62,23 @@
             </div>
             <button type="button" class="col-6 btn btn-light">
               <div class="icons col-6">
-                <img
+                <a href="https://github.com/salvadordiaz1222" target="_blank">
+                  <img
                   src="./assets/images/github.svg"
                   width="16"
                   height="16"
                   fill="currentColor"
                   class="bi bi-github"
-                />
+                  />
+                </a>
+                
               </div>
             </button>
           </li>
         </ul>
       </div>
     </header>
+    <div class="root">
     <!----------------------------------------------------------About me section--------------------------------->
     <section class="card border m-1">
       <div class="headerColor">
@@ -87,7 +91,7 @@
       </div>
     </section>
     <!-------------------------------------------------------------My work section--------------------------------->
-    <section class="card border m-1">
+    <section class="card border m-1 myWork">
       <div class="headerColor">
         <div class="card-header text-center" id="my-work">My work</div>
       </div>
@@ -166,11 +170,11 @@
       <div class="card" id="mainParent"></div>
     </section>
     <!----------------------------------------------------------------More about me section-------------------->
-    <section class="card border m-1 imagePDF">
+    <section class="card border m-1">
       <div class="headerColor">
         <div class="card-header text-center">More about me</div>
       </div>
-      <div class="card-text m-1">
+      <div class="card-text m-1 imagePDF">
         <a
           href="https://drive.google.com/file/d/1pxEpS8GhtljgDQzHfm-EvxBULBk8QBPJ/view?usp=sharing"
           target="_blank"
@@ -183,7 +187,7 @@
       </div>
     </section>
     <!----------------------------------------------------------------Contact me section------------------------>
-    <section class="card border m-1">
+    <section class="card border m-1 contactMe">
       <div class="headerColor">
         <div class="card-header text-center">Contact me</div>
       </div>
@@ -253,6 +257,7 @@
         </div>
       </div>
     </section>
+  </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
